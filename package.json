@@ -1,0 +1,50 @@
+{
+  "name": "teste_typeorm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pablo-fior/teste_typeorm.git",
+  "author": "Pablo Fior <pablo.fior@trizy.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mysql": "^2.15.21",
+    "@types/yup": "^0.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/continuation-local-storage": "^3.2.4",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "@types/winston": "^2.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-request-id": "^3.0.0",
+    "http-status": "^1.5.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan-body": "^2.6.8",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.10",
+    "winston": "^3.8.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=dev ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+  }
+}
